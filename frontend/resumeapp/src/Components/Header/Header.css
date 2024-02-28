@@ -1,0 +1,36 @@
+/* Header.css */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* 로고와 메뉴를 좌우로 정렬합니다. */
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+}
+
+.logo {
+  font-size: 24px; /* 로고 글자 크기를 설정합니다. */
+  font-weight: bold; /* 로고 글자 굵기를 설정합니다. */
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: block; /* 메뉴를 세로로 배치하기 위해 변경합니다. */
+  margin-bottom: 10px; /* 각 메뉴 항목 사이의 간격을 설정합니다. */
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #ffd700;
+}

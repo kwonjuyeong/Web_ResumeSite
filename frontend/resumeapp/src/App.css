@@ -1,5 +1,13 @@
+
+/* App.css */
 .App {
-  text-align: center;
+  display: flex;
+}
+
+.left {
+  width: 50px; /* 헤더의 너비에 맞게 조절하세요 */
+  background-color: #333; /* 헤더의 배경색에 맞게 조절하세요 */
+  color: #fff; /* 헤더의 텍스트 색상에 맞게 조절하세요 */
 }
 
 .App-logo {
