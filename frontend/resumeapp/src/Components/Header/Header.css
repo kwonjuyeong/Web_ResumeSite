@@ -1,16 +1,21 @@
-/* Header.css */
 .header {
   display: flex;
+  flex-direction: column; /* 요소들을 세로로 정렬합니다. */
   align-items: center;
-  justify-content: space-between; /* 로고와 메뉴를 좌우로 정렬합니다. */
+  background-color: transparent;
   padding: 20px;
-  background-color: #333;
   color: #fff;
 }
 
+.menu-group {
+  display: flex; /* 메뉴 그룹을 가로로 정렬합니다. */
+  flex-direction: column; /* 메뉴 항목을 세로로 정렬합니다. */
+}
+
 .logo {
-  font-size: 24px; /* 로고 글자 크기를 설정합니다. */
-  font-weight: bold; /* 로고 글자 굵기를 설정합니다. */
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px; /* 로고 아래에 간격을 추가합니다. */
 }
 
 nav ul {
@@ -20,8 +25,7 @@ nav ul {
 }
 
 nav ul li {
-  display: block; /* 메뉴를 세로로 배치하기 위해 변경합니다. */
-  margin-bottom: 10px; /* 각 메뉴 항목 사이의 간격을 설정합니다. */
+  margin-bottom: 10px;
 }
 
 nav ul li a {
