@@ -7,7 +7,7 @@ function Header() {
   return (
     <header className="header">
       <div className="logo">
-        <img src={logoImage} alt="로고" /> {/* 로고 이미지를 삽입합니다. */}
+        <img src={logoImage} alt="로고" />
       </div>
       <nav>
         <ul className="menu-group">

@@ -1,21 +1,22 @@
 .header {
   display: flex;
-  flex-direction: column; /* 요소들을 세로로 정렬합니다. */
-  align-items: center;
-  background-color: transparent;
+  flex-direction: column;
+  background-color: white;
   padding: 20px;
   color: #fff;
+  height : 100%;
 }
 
 .menu-group {
-  display: flex; /* 메뉴 그룹을 가로로 정렬합니다. */
-  flex-direction: column; /* 메뉴 항목을 세로로 정렬합니다. */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* 메뉴 항목들을 수직 중앙 정렬 */
+  margin-left: 10px;
 }
 
-.logo {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 20px; /* 로고 아래에 간격을 추가합니다. */
+.menu-group:nth-child(2) li a:hover {/* 마우스 올려놓으면 색 변경 */
+  color: #7e9af3; 
+  text-decoration: underline;
 }
 
 nav ul {
@@ -24,17 +25,38 @@ nav ul {
   padding: 0;
 }
 
-nav ul li {
-  margin-bottom: 10px;
-}
-
-nav ul li a {
-  color: #fff;
+/* 채용정보, 입사지원, 회사소개, 인사제도 css */
+.menu-group:nth-child(1) li a {
+  color: #000000; 
   text-decoration: none;
-  font-size: 18px;
+  font-size: 15px;
   font-weight: bold;
 }
 
-nav ul li a:hover {
-  color: #ffd700;
+.menu-group:nth-child(1) li:nth-last-child(1) {
+  margin-bottom: 30px;
+}
+
+.menu-group:nth-child(1) li a:hover {/* 마우스 올려놓으면 색 변경 */
+  color: #1a8334; 
+  text-decoration: underline;
+}
+
+/* 합격자 조회, 문의하기 css */
+.menu-group:nth-child(2) li a {
+  color: #7e9af3;
+  text-decoration: none;
+  font-size: 14px; 
+  font-weight: bold;
+}
+
+.menu-group:nth-child(2) { /* 보라색 선 추가 */
+  border-top: 1px solid #7e9af3; 
+  border-bottom: 1px solid #7e9af3; 
+}
+
+
+.menu-group:nth-child(2) li a:hover {/* 마우스 올려놓으면 색 변경 */
+  color: #7e9af3; 
+  text-decoration: underline;
 }
