@@ -1,4 +1,3 @@
-// Header.js
 import React from 'react';
 import './Header.css'; 
 import logoImage from '../../assets/images/logo.png';
@@ -20,7 +19,18 @@ function Header() {
           <li><a href="#applicant-query">합격자 조회</a></li>
           <li><a href="#contact">문의하기</a></li>
         </ul>
+
+        <ul className="menu-group">
+          <li><a href="/privacy-policy">개인정보 처리방침</a></li>
+          <li><a href="/email-opt-out">이메일무단수집거부</a></li>
+        </ul>
       </nav>
+
+      <div className="footer-info">
+       
+        <p>경기도 안양시 동안구 경수대로 247</p>
+        <p>@ All rights reserved.</p>
+      </div>
     </header>
   );
 }

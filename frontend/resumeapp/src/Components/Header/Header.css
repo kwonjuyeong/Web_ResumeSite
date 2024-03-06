@@ -5,6 +5,8 @@
   padding: 20px;
   color: #fff;
   height : 100%;
+  width:max-content;
+  position: relative;
 }
 
 .menu-group {
@@ -46,7 +48,7 @@ nav ul {
 .menu-group:nth-child(2) li a {
   color: #7e9af3;
   text-decoration: none;
-  font-size: 14px; 
+  font-size: 13px; 
   font-weight: bold;
 }
 
@@ -55,8 +57,53 @@ nav ul {
   border-bottom: 1px solid #7e9af3; 
 }
 
-
 .menu-group:nth-child(2) li a:hover {/* 마우스 올려놓으면 색 변경 */
   color: #7e9af3; 
   text-decoration: underline;
+}
+
+.menu-group:nth-child(2) li:last-child {
+  margin-bottom: 20px; /* '문의하기' 아래에 마진 추가 */
+}
+
+
+.menu-group:nth-child(3) li a {
+  color: #000000; 
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.menu-group:nth-child(3) {
+  position: absolute;
+  bottom: 17%;
+}
+
+
+
+.footer-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: #000000;
+  position: absolute;
+  bottom: 5%;
+  margin-left: 15px;
+  left: 10px; /* 좌측 여백 추가 */
+  right: 20px; /* 우측 여백 추가 */
+}
+
+
+.footer-info p:nth-child(1) {
+  border-top: 1px solid #000000; /* 첫 번째 p 요소에 위쪽 border 추가 */
+  border-bottom: 1px solid #000000; /* 마지막 p 요소에 아래쪽 border 추가 */
+  padding: 10px;
+  margin-bottom: 10px;
+  border-style:inset;
+}
+
+
+.footer-info p {
+  margin: 5px 0;
+  font-size: 11px;
 }
