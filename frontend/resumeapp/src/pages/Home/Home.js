@@ -13,41 +13,31 @@ function Home() {
         <div id="slider" className="slider">
           <img src={homeImage} alt="" data-index="0" />	
         </div>	
-          <div id="menu" className="layoutMain">
+        <div id="menu" className="menu-container">
               <a href="/app/jobnotice/list" className="nth-1">
                 <h2>채용공고</h2>
-                <p><br /><br /></p>
-                <div className="icon" data-modal="icon">
-                  <img src={menu1} alt="" width="120" height="90"/>
-                </div>
+                <p ><br/><br/></p>
+                  <img src={menu1} alt="" />
               </a>
               <a href="/bbs/appsite/notice/list" className="nth-2">
                 <h2 >채용문의</h2>
-                <p></p>
-                <div className="icon"  data-modal="icon">
-                  <img src={menu2} alt="" width="120" height="90" />
-                </div>
+                <p><br/><br/></p>
+                  <img src={menu2} alt="" />
               </a>
               <a href="/app/applicant/registResume" className="nth-3">
                 <h2 >지원서 작성</h2>
-                <p></p>
-                <div className="icon" data-modal="icon">
-                  <img src={menu3} alt="" width="120" height="90" />
-                </div>
+                <p><br/><br/></p>
+                  <img src={menu3} alt="" />
               </a>
               <a href="/bbs/appsite/notice/list" className="nth-4">
                 <h2>공지사항</h2>
-                <p ></p>
-                <div className="icon" data-modal="icon">
-                  <img src={menu4} alt="" width="120" height="90" />
-                </div>
+                <p ><br /><br/></p>
+                  <img src={menu4} alt=""  />
               </a>
               <a href="/bbs/appsite/qna/write" className="nth-5">
                 <h2>채용 QnA</h2>
-                <p></p>
-                <div className="icon" data-modal="icon">
-                  <img src={menu5} alt="" width="120" height="90" />
-                </div>
+                <p><br/><br/></p>
+                  <img src={menu5} alt="" />
               </a>
             </div>
               

@@ -57,6 +57,7 @@ nav ul {
 .menu-group:nth-child(2) { /* 보라색 선 추가 */
   border-top: 1px solid #7e9af3; 
   border-bottom: 1px solid #7e9af3; 
+  border-width: 2px;
 }
 
 .menu-group:nth-child(2) li a:hover {/* 마우스 올려놓으면 색 변경 */
