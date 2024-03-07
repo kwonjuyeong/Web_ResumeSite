@@ -1,13 +1,80 @@
 /* Home.css */
+#wrap {
+  position:relative;
+}
+.wrapContent {
+  min-height:300px;
+}
 
 .home {
-    height: 100vh; /* 화면의 높이를 꽉 채우도록 설정합니다. */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .home img {
-    height: 100%; /* 이미지의 높이를 화면의 높이에 맞춥니다. */
-    width: auto; /* 가로는 세로의 비율에 맞게 자동 조정됩니다. */
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal .pageWizard .list {
+  float:none;
+  height:auto;
+}
+.icon>img,
+.photo>img {
+  display:block;
+}
+
+.layoutMain {
+  display: flex;
+}
+
+#slider {
+  flex: 1;
+}
+
+#menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* 세로 방향 가운데 정렬 */
+}
+
+body.type-05 #menu>a, body.type-05 #menu>div {
+  color: #fff;
+}
+
+#menu>.nth-1 {
+  background: #365798;
+}
+
+#menu>a, #menu>div {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  padding: 25px;
+  width: inherit;
+  height: 180px;
+  text-decoration: none;
+}
+
+#menu>a, #menu>div {
+  color: #fff;
+}
+a {
+  text-decoration: none;
+}
+body, input, textarea, select, button, table, a {
+  color: #333;
+}
+user agent stylesheet
+a:-webkit-any-link {
+  color: -webkit-link;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+#setMenu3 h1.font-nanumbarungothic, #setMenu3 div.font-nanumbarungothic h2, #setMenu3 div.font-nanumbarungothic p, .font-nanumbarungothic, .font-nanumbarungothic button {
+  font-family: '나눔바른고딕', 'Nanum Barun Gothic', '돋움', Dotum;
+}
+body {
+  line-height: 1.5;
+}
+body, input, textarea, select, button, table {
+  font-size: 12px;
+}
